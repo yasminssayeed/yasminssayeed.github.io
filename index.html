@@ -13,16 +13,22 @@
 	<body>
 
 	<script>
-	function showDiv() {
-   		document.getElementById('about_page').style.display = "block";
+	function showAbout() {
+	  var x = document.getElementById("about_page");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
 	}
 	</script>
+		
 	<div class="header"> Yasmin Sayeed </div>
 
 	<center>
 		<div class="nav">
 				  <button id="home" class="nav_btns" onclick="window.location.href='#'" type="button">Home</button> 
-				  <button id="about" class="nav_btns" type="button" onclick="showDiv()">About</button>
+				  <button id="about" class="nav_btns" type="button" onclick="showAbout()">About</button>
 				  <button class="nav_btns" id="projects">Projects</button>
 
 				  <button class="nav_btns" onclick="window.location.href='../Yasmin Sayeed Resume.pdf'">Resume</button>
